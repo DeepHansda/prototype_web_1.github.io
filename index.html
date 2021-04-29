@@ -1,0 +1,150 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="slide fx">
+                <img src="img\wallpaperflare.com_wallpaper (9).jpg" alt="">
+            </div>
+
+
+            <div class="slide fx">
+                <img src="img\wallpaperflare.com_wallpaper (10).jpg" alt="">
+            </div>
+
+
+            <div class="slide fx">
+                <img src="img\pexels-lisa-fotios-1083822.jpg" alt="">
+            </div>
+        </div>
+        </div>
+
+
+
+        <div class="text">
+            <h1>Harmattan</h1>
+            <h3>Please select a video to play</h3>
+        </div>
+        <br><br><br>
+        <center>
+
+            <button type="button" value="1"><div class="box">
+
+
+            <h1>video 1</h1>
+              <iframe  src="https://www.youtube.com/embed/_Sl8diqCAFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div></button>
+            <button type="button" value="2"><div class="box">
+
+
+            <h1>video 2</h1>
+            <iframe  src="https://www.youtube.com/embed/HHBsvKnCkwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div></button>
+            <button type="button" value="3"><div class="box">
+
+            <h1>video 3</h1>
+            <iframe  src="https://www.youtube.com/embed/oe70Uhjc_F4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div></button><br><br>
+            <button type="button" value="4"><div class="box">
+
+            <h1>video 4</h1>
+            <iframe  src="https://www.youtube.com/embed/3176Sw8A0EE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div></button>
+            <button type="button" value="5"><div class="box">
+
+            <h1>video 5</h1>
+            <iframe  src="https://www.youtube.com/embed/DP_NqOOeoao" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div></button>
+            <button type="button" value="6"><div class="box">
+
+            <h1>video 6</h1>
+            <iframe  src="https://www.youtube.com/embed/ijAvpHy_Vdo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div></button><br><br>
+            <button type="button" value="7"><div class="box">
+
+            <h1>video 7</h1>
+            <iframe  src="https://www.youtube.com/embed/IxF55qB4CuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+          </div></button>
+            <button type="button" value="8"><div class="box">
+
+            <h1>video 8</h1>
+            <iframe  src="https://www.youtube.com/embed/IxF55qB4CuQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          </div></button>
+            <button type="button" value="9"><div class="box">
+
+            <h1>video 9</h1>
+            <iframe  src="https://www.youtube.com/embed/nHjy0tXdmOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          </div></button><br><br>
+            <button type="button" value="10"><div class="box">
+
+            <h1>video 10</h1>
+            <iframe  src="https://www.youtube.com/embed/O2tu2R2curI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          </div></button>
+            <button type="button" value="11"><div class="box">
+
+            <h1>video 11</h1>
+            <iframe  src="https://www.youtube.com/embed/fUbfBQ_F0Ag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          </div></button>
+            <button type="button" value="12"><div class="box">
+
+            <h1>video 12</h1>
+            <iframe src="https://www.youtube.com/embed/B_ZxezFynEA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          </div></button>
+
+        </center>
+
+        <script type="text/javascript">
+
+        alert("please turn on internet connection")
+        window.onscroll= function() {
+            freez()
+        }
+        var n = document.querySelector(".text")
+        var sticky = n.offsetTop;
+
+        function freez() {
+            if (window.pageYOffset >= sticky) {
+                       n.classList.add("sticky")
+                            }
+            else {
+                 n.classList.remove("sticky");
+                    }
+        }
+
+
+        var slideIndex = 0;
+        slideshow();
+
+        function slideshow() {
+            var i;
+
+            var slides=document.querySelectorAll(".slide");
+
+
+            for(i=0;i < slides.length;i++){
+                slides[i].style.display="none";
+            }
+            slideIndex++;
+
+            if(slideIndex>slides.length){slideIndex=1};
+
+            slides[slideIndex-1].style.display="block";
+
+            setTimeout(slideshow,5000);
+        }
+
+
+
+        </script>
+    </body>
+</html>
